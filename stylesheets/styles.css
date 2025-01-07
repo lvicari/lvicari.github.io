@@ -85,7 +85,7 @@ table {
 }
 
 th, td {
-  text-align:left;
+  text-align:justify;
   padding:5px 10px;
   border-bottom:1px solid #e5e5e5;
 }
@@ -140,7 +140,7 @@ header ul a {
   font-size:11px;
   color:#999;
   display:block;
-  text-align:center;
+  text-align:justify;
   padding-top:6px;
   height:34px;
 }
