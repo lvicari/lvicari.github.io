@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-  color:#CB4154;
+  color:#4e7bec;
 }
 
 a small {
@@ -63,7 +63,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:980px;
   margin:0 auto;
 }
 
@@ -112,7 +112,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:250px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -178,7 +178,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:680px;
   float:right;
   padding-bottom:50px;
 }
@@ -278,10 +278,27 @@ footer {
 }
 
 .profile-pic {
-  width: 70%;        /* image will take up 60% of the header’s width */
+  width: 90%;        /* image will take up 60% of the header’s width */
   height: auto;      /* keeps proportions */
   max-width: 220px;  /* optional: prevent it from getting too big */
   /* border-radius: 8px;  optional: round corners */
   display: block;
   /* margin: 0 auto 15px auto; /* center the image in the header */
+}
+
+.button {
+  display: inline-block;
+  padding: 1px 4px;
+  background-color: white;
+  color: #26428b !important;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #26428b;
+}
+
+.button:hover {
+  background-color: #26428b;
+  color: white !important;
+  border: 1px solid #26428b;
 }
