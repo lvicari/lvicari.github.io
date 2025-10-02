@@ -11,6 +11,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
   </head>
   <body style="font-family: Baskerville; font-size: 16px;">
     <div class="wrapper">
@@ -37,22 +38,33 @@
     I am a doctoral researcher at the
     <a href="https://www.lse.ac.uk/government" target="_blank">Government Department</a> of the
     <a href="https://www.lse.ac.uk/" target="_blank">London School of Economics and Political Science</a>. 
-    My lead supervisor is <a href="https://stephanewolton.com/" target="_blank">Stephane Wolton</a>.
-    My co-supervisors are
-    <a href="https://www.lse.ac.uk/government/people/academic-staff/rafael-hortala-vallve" target="_blank">Rafael Hortala-VallVe</a>,
-    <a href="https://www.lse.ac.uk/government/people/academic-staff/valentino-larcinese" target="_blank">Valentino Larcinese</a>, and
+    My lead supervisor is <a href="https://stephanewolton.com/" target="_blank">Stephane Wolton</a>, my co-supervisor is
     <a href="https://sites.google.com/view/nruiz/home?authuser=0" target="_blank">Nelson A. Ruiz</a>.
   </p>
 
-  <p> 
+  <p>
     My <a href="pdfs/jmp.pdf" target="_blank">job market paper</a>, joint with <a href="https://paugrau.cat/" target="_blank">Pau Grau-Vilalta</a> 
     and <a href="https://sites.google.com/view/andreaxamo/home" target="_blank">Andrea Xamo</a>, 
-    investigates the behaviour of loyalist and career-appointed bureaucrats in Fascist Italy.<br>
+    studies the impact of loyalist and career-appointed bureaucrats on surveillance in Fascist Italy.
+  </p>
+
+  <p>
+    If you would like to know more, feel free to click on the sections below 
+    and reach out at <a href="mailto:l.vicari@lse.ac.uk">l.vicari@lse.ac.uk</a>.
+  </p>
+
+  <div class="text-left">
+   <h2 class="toggle-header collapsed">About</h2>
+   <div class="toggle-content hidden">
+  <p>
+    <a href="https://www.lse.ac.uk/government/people/academic-staff/rafael-hortala-vallve" target="_blank">Rafael Hortala-VallVe</a> and
+    <a href="https://www.lse.ac.uk/government/people/academic-staff/valentino-larcinese" target="_blank">Valentino Larcinese</a> 
+    complete my PhD committee as advisers.<br>
     My doctoral dissertation features two other empirical studies from the Italian experience in the last century: 
-    one on the inteplay between fascist radio propaganda and repression levels, 
-    the other on industrial policy through State shareholding in the post-War period. 
-    More quantitative historical work on agricultural policy, climate migration, and public housing is underway.<br>
-    I am also interested in formal theory: with <a href="https://www.kunheo.com/" target="_blank">Kun Heo</a>, I developed a model that shows how access journalism can legitimise media "crookedness" claims.
+    one on the inteplay between fascist radio propaganda and repression levels, the other on industrial policy through State shareholding in the post-War period. 
+    More quantitative historical work on agricultural policy, climate migration, and public housing is on the horizon.<br>
+    I am also interested in formal theory: with <a href="https://www.kunheo.com/" target="_blank">Kun Heo</a>, 
+    I developed a model that shows how access journalism can legitimise media "crookedness" claims.
   </p>
 
   <p>
@@ -78,13 +90,15 @@
     <a href="https://www.unibocconi.it/en" target="_blank">Bocconi University</a>,
     where I was a Pre-doc for a year.
     More details on all of the above can be found in my
-    <a href="pdfs/resume.pdf" target="_blank">CV</a>.<br>
-    Feel free to reach out at <a href="mailto:l.vicari@lse.ac.uk">l.vicari@lse.ac.uk</a>.
+    <a href="pdfs/resume.pdf" target="_blank">CV</a>.
   </p>
+   </div>
+</div>
 
 	      
 <div class="text-left">
-<h2>Research</h2>
+<h2 class="toggle-header collapsed">Research</h2>
+<div class="toggle-content hidden">
 <h3>Job Market Paper</h3>
 <div style="margin-left: 30px;">
   <strong>Feather-Handed Fascists:
@@ -243,8 +257,10 @@ Surveillance as a Signal of Bureaucratic Loyalty</strong><br>
   </details>
 </div>
 <br>
+</div>
 
-<h2>Teaching</h2>
+<h2 class="toggle-header collapsed">Teaching</h2>
+<div class="toggle-content hidden">
 <h3>Lecturer, UCL</h3>
 <ul>
   <li>
@@ -277,6 +293,7 @@ Surveillance as a Signal of Bureaucratic Loyalty</strong><br>
     Rating not collected.
   </li>
 </ul>
+</div>
         
       </section>
       <footer>
@@ -286,6 +303,23 @@ Surveillance as a Signal of Bureaucratic Loyalty</strong><br>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleHeaders = document.querySelectorAll('.toggle-header');
+        
+        toggleHeaders.forEach(header => {
+          header.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            
+            // Toggle collapsed class on header
+            this.classList.toggle('collapsed');
+            
+            // Toggle hidden class on content
+            content.classList.toggle('hidden');
+          });
+        });
+      });
+    </script>
   </body>
 </html>
 

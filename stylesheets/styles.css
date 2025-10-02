@@ -302,3 +302,23 @@ footer {
   color: white !important;
   border: 1px solid #26428b;
 }
+
+.toggle-header {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.toggle-header:hover {
+  opacity: 0.8;
+}
+
+.toggle-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 1000px;
+}
+
+.toggle-content.hidden {
+  max-height: 0;
+}
