@@ -307,10 +307,23 @@ footer {
   cursor: pointer;
   user-select: none;
   position: relative;
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: white;
+  color: #26428b !important;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  border: 1px solid #26428b;
+  margin: 0 0 20px;
 }
 
 .toggle-header:hover {
-  opacity: 0.8;
+  background-color: #26428b;
+  color: white !important;
+  border: 1px solid #26428b;
+  opacity: 1;
 }
 
 .toggle-content {
