@@ -310,23 +310,24 @@ footer {
   padding: 6px 10px;                /* space between text and border */
   border: 1px solid currentColor;   /* border using the same colour as the font */
   border-radius: 3px;
-  background: transparent;
+  background-color: #26428b;
+  color: white;
   transition: background-color 150ms ease, color 150ms ease, opacity 150ms ease;
 }
 
 .toggle-header:hover {
-  background-color: #26428b;
-  color: white;
+  background-color: white;
+  color: #26428b;
 }
 
 .toggle-header:not(.collapsed) {
-  background-color: #26428b;
-  color: white;
+  background-color: white;
+  color: #26428b;
 }
 
 .toggle-header:not(.collapsed):hover {
-  background-color: white;
-  color: #26428b;
+  background-color: #26428b;
+  color: white;
 }
 
 .toggle-content {
