@@ -162,7 +162,7 @@ header ul a:active {
 }
 
 strong {
-  color:#26428b;
+  color:#494949;
   font-weight:500;
 }
 
@@ -316,17 +316,26 @@ footer {
 
 .toggle-header:hover {
   background-color: #26428b;
-  color: white !important;
+  color: white;
+}
+
+.toggle-header:not(.collapsed) {
+  background-color: #26428b;
+  color: white;
+}
+
+.toggle-header:not(.collapsed):hover {
+  background-color: white;
+  color: #26428b;
 }
 
 .toggle-content {
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  max-height: 1000px;
+  display: block;
+  overflow: visible;
 }
 
 .toggle-content.hidden {
-  max-height: 0;
+  display: none;
 }
 
 .photo-caption {
